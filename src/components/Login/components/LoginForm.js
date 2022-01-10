@@ -34,7 +34,7 @@ const LoginForm = () => {
         )}
         <Error error={error} />
       </form>
-      <Link className={style.perdeu} to="/login/criar/perdeu">
+      <Link className={style.perdeu} to="/login/perdeu">
         Perdeu a Senha?
       </Link>
       <div className={style.cadastro}>

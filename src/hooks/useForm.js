@@ -6,6 +6,10 @@ const types = {
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i,
     message: "Preencha um e-mail válido",
   },
+  number: {
+    regex: /^\d+$/,
+    message: "Utiliza apenas números",
+  },
 };
 
 const useForm = (type) => {

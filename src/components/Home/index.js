@@ -1,7 +1,12 @@
 import React from "react";
+import Feed from "../Feed";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <sectionn className="container mainContainer">
+      <Feed />
+    </sectionn>
+  );
 };
 
 export default Home;

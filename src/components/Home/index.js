@@ -3,9 +3,9 @@ import Feed from "../Feed";
 
 const Home = () => {
   return (
-    <sectionn className="container mainContainer">
+    <section className="container mainContainer">
       <Feed />
-    </sectionn>
+    </section>
   );
 };
 

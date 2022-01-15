@@ -65,6 +65,12 @@ export function PHOTOS_GET({ page, total, user }) {
   };
 }
 
+export function PHOTOT_GET(id) {
+  return {
+    url: `${API_URL}api/photo/${id}`,
+  };
+}
+
 export function PHOTO_GET(id) {
   return {
     url: `${API_URL}api/photo/${id}`,

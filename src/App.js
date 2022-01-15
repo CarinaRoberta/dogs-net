@@ -7,6 +7,9 @@ import "./App.css";
 import { UserStorage } from "./context/userContext";
 import User from "./components/User/User";
 import ProtectedRouter from "./components/ProtectedRouter";
+import Photo from "./components/Photo/Photo";
+import UserProfile from "./components/User/components/UserProfile";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
                 </ProtectedRouter>
               }
             />
+            <Route path="foto/:id" element={<Photo />} />
+            <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>

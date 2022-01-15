@@ -6,15 +6,14 @@ import { userContext } from "../../context/userContext";
 import PhotoDelete from "./PhotoDelete";
 import Image from "../Image/Image";
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
   const user = useContext(userContext);
   const { photo, comments } = data;
 
   return (
-    <div className={style.photo}>
+    <div className={`${style.photo} ${single ? style.single : ""}`}>
       <div className={style.img}>
         <Image src={photo.src} alt={photo.title} />
-        
       </div>
       <div className={style.details}>
         <div>
